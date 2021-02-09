@@ -17,13 +17,13 @@ namespace SendEmailsOutlook
                 UseDefaultCredentials = false,
                 Credentials = new NetworkCredential()
                 {
-                    UserName = "janm.montalvo@gmail.com",
-                    Password = "Hector504mail"
+                    UserName = "<YOUR_EMAIL>",
+                    Password = "<YOUR_PASSWORD>"
                 }
             };
 
-            MailAddress FromEmail = new MailAddress("janm.montalvo@gmail.com", "Michael Montalvo");
-            MailAddress ToEmail = new MailAddress("ortiz_95537@students.pupr.edu", "Recepient");
+            MailAddress FromEmail = new MailAddress("<SENDER_EMAIL", "Michael Montalvo");
+            MailAddress ToEmail = new MailAddress("<RECEIVER_EMAIL>", "Recepient");
             MailMessage Message = new MailMessage()
             {
                 From = FromEmail,
